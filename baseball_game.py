@@ -96,8 +96,8 @@ def is_duplicated_number(three_digit):
     # 조건에 따라 변환되어야 할 결과를 result 변수에 할당
     
     result = True
-
-    if ''.join(set(three_digit)) == three_digit:
+    remove_dup = ''.join(set(three_digit))
+    if len(remove_dup) == 3:
         result = False
     
     # ==================================
