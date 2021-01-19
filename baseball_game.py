@@ -296,8 +296,7 @@ def main():
             print("Strikes : {} , Balls : {}".format(result[0], result[1]))
             if result[0] == 3:
                 while True:
-                    print("You win, one more(Y/N) ?")
-                    check_continue = input()
+                    check_continue = input("You win, one more(Y/N) ?")
                     if is_no(check_continue):
                         check_result = 1
                         break
